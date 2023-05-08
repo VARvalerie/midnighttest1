@@ -122,6 +122,7 @@ function draw() {
         [your vida object].drawActiveZones(0, 0, width, height);
     */
     myVida.drawActiveZones(0, 0, canvasWidth, canvasHeight);
+    noLoop()
      
   }
   else {
