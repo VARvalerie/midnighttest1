@@ -48,8 +48,14 @@ function initCaptureDevice() {
 
 function trigger(zone) {
   let soundIndex = myVida.activeZones.indexOf(zone);
+
+  // Stop any currently playing sounds
+  sounds.forEach(sound => sound.stop());
+  
+  // Play the new sound
   sounds[soundIndex].play();
 }
+
 
 function setup() {
   createCanvas(canvasWidth, canvasHeight);
