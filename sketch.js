@@ -12,7 +12,7 @@ zoneHeight = 0.3;
 
 function onActiveZoneChange(zone) {
   let soundIndex = myVida.activeZones.indexOf(zone);
-  sounds[soundIndex].loop();
+  sounds[soundIndex].play();
 }
 
 function preload() {
@@ -48,7 +48,7 @@ function initCaptureDevice() {
 
 function trigger(zone) {
   let soundIndex = myVida.activeZones.indexOf(zone);
-  sounds[soundIndex].loop();
+  sounds[soundIndex].play();
 }
 
 function setup() {
